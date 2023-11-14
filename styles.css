@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cbb8b8;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    background-color: #555;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slider-container {
+    position: relative;
+}
+.slider img {
+    width: 100%; /* Her resmin genişliği 100% olsun */
+    object-fit: cover; /* Resimlerin orantılı bir şekilde sığmasını sağlar */
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    
+}
+
+img {
+    width: auto;
+    height: 200px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.slider-navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.slider-navigation label {
+    width: 10px;
+    height: 10px;
+    background-color: #ddd;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+label {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ddd;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input#slide1:checked ~ .slides {
+    transform: translateX(0);
+}
+
+input#slide2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+
+input#slide3:checked ~ .slides {
+    transform: translateX(-200%);
+}
+
+input#slide1:checked ~ .slider-navigation label:nth-child(1),
+input#slide2:checked ~ .slider-navigation label:nth-child(2),
+input#slide3:checked ~ .slider-navigation label:nth-child(3) {
+    background: #333;
+}
+.background-image {
+    background-image: url('images/logo_transparent.png'); /* Arka plan resmi URL'si */
+    background-size: 200px;
+    background-position: center; /* Arka plan resmini elemanın ortasına yerleştirir */
+    background-repeat: no-repeat; /* Arka plan resminin tekrarlanmasını engeller */
+    position: fixed; /* Elemanı tarayıcı penceresine göre konumlandırır */
+    top: 0; /* Elemanın pencerenin üstünden ne kadar uzaklıkta olduğunu ayarlar */
+    left: 0; /* Elemanın pencerenin solundan ne kadar uzaklıkta olduğunu ayarlar */
+    width: 100%; /* Elemanın genişliğini pencerenin genişliğine uyacak şekilde ayarlar */
+    height: 100%; /* Elemanın yüksekliğini pencerenin yüksekliğine uyacak şekilde ayarlar */
+    opacity: 0.5; /* Elemanın opaklığını ayarlar (0 tamamen saydam, 1 tamamen opak) */
+    z-index: -1; /* Elemanın yığınlama sırasını ayarlar. -1, diğer elemanların önüne yerleştirir. */
+}
+.logo{
+    font-size: 35px;
+    letter-spacing: 7px;
+    background-color: rgb(123, 49, 71);
+    padding: 2px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.haberler-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.haber-listesi {
+    list-style: none;
+    padding: 0;
+}
+
+.haber-listesi li {
+    margin-bottom: 10px;
+}
+
+.haber-listesi a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
