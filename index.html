@@ -1,68 +1,82 @@
 <!DOCTYPE html>
 <html lang="tr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="images/logo_transparent.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="images/logo_transparent.png" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <title>Kıssadan Hisseler</title>
-</head>
+  </head>
 
-<body>
-
-    <header>
+  <body>
+    <div class="container">
+      <header>
         <h1 class="logo">Kıssadan Hisseler</h1>
         <!-- Diğer menüler buraya eklenebilir -->
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Anasayfa</a></li>
-            <li><a href="bilim.html">Bilim</a></li>
-            <li><a href="spor.html">Spor</a></li>
-            <li><a href="teknoloji.html">Teknoloji</a></li>
-            <li><a href="saglik.html">Sağlık</a></li>
-            <li><a href="meteoroloji.html">Meteoroloji</a></li>
-            <!-- Diğer menü bağlantıları buraya eklenebilir -->
-        </ul>
-    </nav>
-    <div class="background-image"></div>
-    <main>
-        <div class="container">
-            <div class="slider-container">
-                <input type="radio" name="slider" id="slide1" checked>
-                <input type="radio" name="slider" id="slide2">
-                <input type="radio" name="slider" id="slide3">
-        
-                <div class="slides">
-                    <div class="slide" id="slide1"><img src="images/ana sayfa1.jpeg" alt="Slide 1"></div>
-                    <div class="slide" id="slide2"><img src="images/indir (1).jpeg" alt="Slide 2"></div>
-                    <div class="slide" id="slide3"><img src="images/indir (2).jpeg" alt="Slide 3"></div>
-                </div>
-        
-                <div class="slider-navigation">
-                    <label for="slide1"></label>
-                    <label for="slide2"></label>
-                    <label for="slide3"></label>
-                </div>
-            </div>
-        
-            <div class="haberler-container">
-                <h2>Günün Haberleri</h2>
-                <ul class="haber-listesi">
-                    <li><a href="#">Türkiye'de Yerli Otomobil Üretimi Başlıyor!</a></li>
-                    <li><a href="#">Haber 2 Başlığı</a></li>
-                    <li><a href="#">Haber 3 Başlığı</a></li>
-                    <!-- Diğer haber başlıklarını ekleyin -->
-                </ul>
-            </div>
-        </div>
+      </header>
 
-    </main>
+      <nav>
+        <ul>
+          <li><a href="index.html">Anasayfa</a></li>
+          <li><a href="bilim.html">Bilim</a></li>
+          <li><a href="spor.html">Spor</a></li>
+          <li><a href="teknoloji.html">Teknoloji</a></li>
+          <li><a href="saglik.html">Sağlık</a></li>
+          <!-- Diğer menü bağlantıları buraya eklenebilir -->
+        </ul>
+      </nav>
+
+      <main class="haberler">
+        <section class="haber">
+          <img src="images/anasayfahaber1.png" alt="Haber 1 Resmi" />
+          <div class="haber-icerik">
+            <h2>
+              <a href="anasayfahaber1.html"
+                >Başsavcılık harekete geçti! Dilan-Engin Polat çiftinin
+                şirketleri için flaş karar</a
+              >
+            </h2>
+          </div>
+        </section>
+
+        <section class="haber">
+          <img src="images/anasayfa2.webp" alt="Haber 2 Resmi" />
+          <div class="haber-icerik">
+            <h2>
+              <a href=""
+                >Fenerbahçe'de şaşırtan ayrılık! Sezon başında transfer
+                edilmişti</a
+              >
+            </h2>
+          </div>
+        </section>
+
+        <section class="haber">
+          <img src="images/ana sayfa 3.webp" alt="Haber 3 Resmi" />
+          <div class="haber-icerik">
+            <h2>
+              <a href=""
+                >Hrant Dink’in katili Ogün Samast şartlı tahliye edildi</a
+              >
+            </h2>
+          </div>
+        </section>
+        <section class="haber">
+          <img src="images/ana sayfa 4.webp" alt="Haber 4 Resmi" />
+          <div class="haber-icerik">
+            <h2>
+              <a href=""
+                >Baykar'dan Gazze'ye 286 milyon liralık insani yardım</a
+              >
+            </h2>
+          </div>
+        </section>
+      </main>
+    </div>
 
     <footer>
-        <p>&copy; Fatih Akyüz 212701032</p>
+      <p>&copy; Fatih Akyüz</p>
     </footer>
-</body>
-
+  </body>
 </html>
