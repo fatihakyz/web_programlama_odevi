@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-size: cover;
-  background: url('images/background.jpg') no-repeat center center fixed;
+  background: url("images/background.jpg") no-repeat center center fixed;
   background-color: #906666;
 }
 
@@ -14,6 +14,8 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+;
+
 }
 
 header {
@@ -34,8 +36,8 @@ nav ul {
   margin: 0;
   list-style: none;
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 
@@ -96,20 +98,33 @@ footer {
   border-radius: 5px;
 }
 .haber.tam-sayfa {
-    width: 100%;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  .haber.tam-sayfa img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px 5px 0 0;
-  }
-  .logo{
-    font-size: 1.5em;
-  }
-  .haber-icerik img {
-    max-width: 100%;
-    height: auto;
-  }
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.haber.tam-sayfa img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+.logo {
+  font-size: 1.5em;
+}
+.haber-icerik img {
+  max-width: 100%;
+  height: auto;
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+
+#sayfa{
+  width: 100%;
+}
+
+#safa-resim{
+  padding-right: 20%;
+  padding-left: 20%;
+}
